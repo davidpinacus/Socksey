@@ -28,7 +28,6 @@ yesterday_date_price=data["Time Series (Daily)"][yesterday_date]["4. close"]
 day_before_yesterday_date_price=data["Time Series (Daily)"][day_before_yesterday_date]["4. close"]
 
 price_difference=abs(float(yesterday_date_price) - float(day_before_yesterday_date_price))
-
 percentage_diff=(price_difference / float(day_before_yesterday_date_price)) * 100
 
 if percentage_diff > 5:
